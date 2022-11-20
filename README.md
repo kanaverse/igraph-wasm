@@ -19,11 +19,11 @@ We also add our own `CMakeLists.txt` for convenient linking with CMake's `FetchC
 
 ```
 FetchContent_Declare(
-  igraph-wasm
-  URL https://github.com/LTLA/igraph-wasm/releases/download/v0.1.0_3.1.25/igraph-0.10.2-wasm.tar.gz
-  URL_HASH SHA256=17840e4741247f3712a39d5a3d5b90307209968e23a03bb5f233dd5ad9717935
+  igraph
+  URL https://github.com/LTLA/igraph-wasm/releases/download/v0.1.1_3.1.25/igraph-0.9.4-wasm.tar.gz
+  URL_HASH SHA256=efe59e45472c04b51eee73bc950e5cbcb2d67e859fe93bab927188b3f31cb18f
 )
-FetchContent_MakeAvailable(igraph-wasm)
+FetchContent_MakeAvailable(igraph)
 
 # Simply link igraph-wasm to your target:
 target_link_libraries(my_exe igraph)
