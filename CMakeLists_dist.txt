@@ -7,4 +7,4 @@ project(igraph-wasm
 # override for other FetchContent'd uses of igraph. 
 add_library(igraph INTERFACE)
 target_include_directories(igraph INTERFACE include/igraph)
-target_link_options(igraph INTERFACE lib/libigraph.a)
+target_link_options(igraph INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/lib/libigraph.a)
