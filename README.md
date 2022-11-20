@@ -18,7 +18,7 @@ We also provide a `CMakeLists.txt` for convenient linking with CMake's `FetchCon
 FetchContent_Declare(
   igraph-wasm
   URL https://github.com/LTLA/igraph-wasm/releases/download/v0.1.0_3.1.25/igraph-0.10.2-wasm.tar.gz
-  URL_HASH SHA256=7eade0bde2efef83c7ff25a9839a6e43d388cedbed0e0e110630bd6c43b74010
+  URL_HASH SHA256=17840e4741247f3712a39d5a3d5b90307209968e23a03bb5f233dd5ad9717935
 )
 FetchContent_MakeAvailable(igraph-wasm)
 
