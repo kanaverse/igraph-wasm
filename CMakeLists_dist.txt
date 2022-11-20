@@ -3,6 +3,8 @@ project(igraph-wasm
     DESCRIPTION "igraph C libary for WebAssembly"
     LANGUAGES C)
 
-add_library(igraph-wasm INTERFACE)
-target_include_directories(igraph-wasm INTERFACE include/igraph)
-target_link_options(igraph-wasm INTERFACE lib/libigraph.a)
+# Using 'igraph' directly to enable this to be a drop-in
+# override for other FetchContent'd uses of igraph. 
+add_library(igraph INTERFACE)
+target_include_directories(igraph INTERFACE include/igraph)
+target_link_options(igraph INTERFACE lib/libigraph.a)
