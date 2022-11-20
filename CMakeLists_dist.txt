@@ -1,0 +1,8 @@
+project(igraph-wasm
+    VERSION 0.1.0
+    DESCRIPTION "igraph C libary for WebAssembly"
+    LANGUAGES C)
+
+add_library(igraph-wasm INTERFACE)
+target_include_directories(igraph-wasm INTERFACE include/igraph)
+target_link_options(igraph-wasm INTERFACE lib/libigraph.a)
