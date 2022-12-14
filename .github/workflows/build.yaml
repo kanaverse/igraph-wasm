@@ -8,8 +8,8 @@ name: Build igraph Wasm
 jobs:
   build-wasm:
     runs-on: ubuntu-latest
-    container: ghcr.io/ltla/emcmake-docker/builder:latest
-    
+    container: ghcr.io/ltla/emcmake-docker/builder:2022-12-13
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
