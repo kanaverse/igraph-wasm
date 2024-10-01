@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSIONS=(0.10.6)
+VERSIONS=(0.10.13)
 
 for v in ${VERSIONS[@]}
 do

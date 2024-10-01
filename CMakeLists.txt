@@ -2,8 +2,9 @@ cmake_minimum_required(VERSION 3.18)
 
 project(igraph-wasm-build)
 
-set(IGRAPH_VERSION "0.10.6" CACHE STRING "igraph version to build")
+set(IGRAPH_VERSION "0.10.13" CACHE STRING "igraph version to build")
 
+set(HASH_0.10.13 c6dc44324f61f52c098bedb81f6a602365d39d692d5068ca4fc3734b2a15e64c)
 set(HASH_0.10.6 99bf91ee90febeeb9a201f3e0c1d323c09214f0b5f37a4290dc3b63f52839d6d)
 set(HASH_0.10.4 aa5700b58c5f1e1de1f4637ab14df15c6b20e25e51d0f5a260921818e8f02afc)
 set(HASH_0.10.2 2c2b9f18fc2f84b327f1146466942eb3e3d2ff09b6738504efb9e5edf2728c83)
