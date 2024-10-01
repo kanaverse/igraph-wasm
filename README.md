@@ -5,7 +5,7 @@
 This repository compiles the [**igraph** C library](https://igraph.org/c/) to Wasm binaries that can be quickly linked to other object files.
 The aim is to avoid a tedious re-compilation process for each individual Wasm project,
 especially when only a small part of **igraph**'s functionality is required.
-For example, compiling **igraph** takes up over half of the build time of [**scran.js**](https://github.com/jkanche/scran.js),
+For example, compiling **igraph** takes up over half of the build time of [**scran.js**](https://github.com/kanaverse/scran.js),
 so providing prebuilt binaries can greatly streamline the CI/CD iterations.
 
 Usage of these binaries implies acceptance of the **igraph** license,
@@ -13,14 +13,14 @@ see [here](https://github.com/igraph/igraph) for more details.
 
 ## Quick start
 
-Developers can fetch the `libigraph.a` static library from the [Releases](https://github.com/LTLA/igraph-wasm/releases) page along with the required headers.
+Developers can fetch the `libigraph.a` static library from the [Releases](https://github.com/kanaverse/igraph-wasm/releases) page along with the required headers.
 This contains the contents of the directory created by running `make install` in the **igraph** build directory.
 We also add our own `CMakeLists.txt` for convenient linking with CMake's `FetchContent`:
 
 ```
 FetchContent_Declare(
   igraph
-  URL https://github.com/LTLA/igraph-wasm/releases/download/v0.1.1_3.1.25/igraph-0.9.4-wasm.tar.gz
+  URL https://github.com/kanaverse/igraph-wasm/releases/download/v0.1.1_3.1.25/igraph-0.9.4-wasm.tar.gz
   URL_HASH SHA256=efe59e45472c04b51eee73bc950e5cbcb2d67e859fe93bab927188b3f31cb18f
 )
 FetchContent_MakeAvailable(igraph)
