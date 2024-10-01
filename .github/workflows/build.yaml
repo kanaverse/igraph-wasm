@@ -8,11 +8,11 @@ name: Build igraph Wasm
 jobs:
   build-wasm:
     runs-on: ubuntu-latest
-    container: ghcr.io/ltla/emcmake-docker/builder:2023-07-17
+    container: ghcr.io/kanaverse/emcmake-docker/builder:2024-10-01
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Fetch release name
         run: |
@@ -50,7 +50,7 @@ jobs:
           cat release.txt
 
       - name: Publish tarballs
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: igraph-*-wasm.tar.gz
           name: ${{ env.TITLE }}
